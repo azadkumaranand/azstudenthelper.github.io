@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grocries.css">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8505550afa.js" crossorigin="anonymous"></script>
+    <title>StudentHelper.com</title>
+</head>
+
+<body>
+    <div class="navbar navbar1">
+        <div class="logo"><img src="img/logo1.png" alt=""></div>
+        <ul class="nav_links" id="nav_Id">
+            <li><a href="index.html">HOME</a> </li>
+            <li><a href="notes.php">NOTES</a></li>
+            <li><a href="dress.php">DRESS</a></li>
+            <li><a href="video.php">LECTURE</a></li>
+            <li><a href="shop.php">SHOPING</a></li>
+            <li><i class="fa-solid fa-person-simple">
+                    <?php echo "Welcome". $_SESSION['username']; ?>
+                </i></li>
+        </ul>
+        <div class="menu imageClass" id="menu">
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+    </div>
+    <!-- coller detalis controller -->
+    <div class="go_cart">
+        <a href="#move_on_cart"><img src="img/cartimg1.png" alt="cartimg"></a>
+    </div>
+    
+
+    <div class="coller" id="coller">
+        <div class="columnshop">
+            
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="cart" id="move_on_cart">
+        <div class="cart-header">
+            <div class="column1">Item</div>
+            <div class="column2">Unit price</div>
+            <div class="column3">Units</div>
+        </div>
+        <div class="cart-items"  >
+            <!-- render cart items here -->
+            
+        </div>
+        <div class="cart-footer">
+            <div class="subtotal">
+                Subtotal (0 items): $0
+            </div>
+            <div class="checkout">
+                Proceed to checkout
+            </div>
+        </div>
+    </div>
+    <br>
+    <br><br>
+    <div class="footer">
+        <div class="rowfoot">
+            <div class="columnfoot">
+                <div class="contact">
+                    <h4>Get Touch</h4>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <h5>+91-9798827707</h5>
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h5>studenthelper@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="columnfoot">
+                <div class="services">
+                    <h4>Services</h4>
+                    <li><a href="notes.php">Notes</a></li>
+                    <li><a href="lecturebuy.php">Lecture</a></li>
+                    <li><a href="shop.php">Shoping</a></li>
+                    <li><a href="dress.php">Dress</a></li>
+                </div>
+            </div>
+            <div class="columnfoot">
+                <div class="social">
+                    <h4>Social Media</h4>
+                    <div class="social_links">
+                        <a href="#"><img src="img/insta.png" alt=""></a>
+                        <a href="#"><img src="img/linkedn.png" alt=""></a>
+                        <a href="#"><img src="img/fb.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/grocries.js"></script>
+    <script src="js/app2.js"></script>
+    </div>
+</body>
+
+</html>
